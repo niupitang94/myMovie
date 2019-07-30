@@ -1,0 +1,47 @@
+{
+  "pages": [ 
+    "pages/mymovie/mymovie",
+    "pages/mymap/mymap",
+    "pages/home/home",
+    "pages/comment/comment",
+    "pages/homework/homework",
+    "pages/mybody/mybody",
+    "pages/mybodys/mybodys"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "牛皮糖",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color":"#000000",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+       "iconPath": "images/icons/home1.png",
+       "selectedIconPath": "images/icons/home.png"
+    },
+    {
+      "pagePath": "pages/mymap/mymap",
+      "text": "地图",
+       "iconPath": "images/icons/map1.png",
+       "selectedIconPath": "images/icons/map.png"
+    },
+    {
+      "pagePath": "pages/mymovie/mymovie",
+      "text": "我的电影",
+      "iconPath": "images/icons/movie1.png",
+      "selectedIconPath": "images/icons/movie.png"
+    },
+    {
+      "pagePath": "pages/mybody/mybody",
+      "text": "我的",
+      "iconPath": "images/icons/movie1.png",
+      "selectedIconPath": "images/icons/movie.png"
+    }
+    ]
+  }
+}

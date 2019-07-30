@@ -1,0 +1,21 @@
+<!--pages/mybodys/mybodys.wxml-->
+<view>
+  <view class="detail-container" style="background:url('{{detail.images.large}}') top no-repeat"></view>
+  <view class="detail-mask"></view>
+  <view class="detail-info">
+    <image src="{{detail.images.large}}" class="detail-img"></image>
+    <view class="detail">
+      <view class="detail-title">{{detail.title}}</view>
+      <view>{{detail.original_title}}</view>
+      <view class="detail-sc">{{detail.rating.average}}</view>
+      <view>{{detail.countries}}</view>
+      <view>{{detail.directors[0].name}}</view>
+    </view>
+  </view>
+  <view class="desc">{{detail.summary}}</view>
+  <van-button type="primary" size="large" bindtap="onSelectImage">上传图片</van-button>
+  <van-field bind:change="onContentChange" value="{{value}}"></van-field>
+  <van-rate bind:change="onScore"></van-rate>
+    <image src="{{item}}" wx:for="{{images}}" wx:key="index"></image>
+  <van-button type="warning" size="large" bindtap="Upload">提交</van-button>
+</view>
